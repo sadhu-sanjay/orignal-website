@@ -1,0 +1,21 @@
+---
+import { SITE } from '../config.mjs';
+import MetaTags from '../common/MetaTags.astro';
+const { language='en', textDirection='ltr'} = SITE
+---
+
+
+<!DOCTYPE html>
+<html lang={language} dir={textDirection} > 
+
+  <head>
+    <MetaTags />
+  </head>
+
+  <body >
+      <slot/>
+  </body>
+
+  <footer>
+  </footer>
+</html>
