@@ -71,7 +71,7 @@
     overflow: hidden;
     position: relative;
     aspect-ratio: 1.7777777777777777 / 1;
-    background-image: url('/chicane-header.jpg');
+    background-image: url('/src/assets/images/chicane-header.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
