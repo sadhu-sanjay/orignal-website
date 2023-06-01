@@ -1,32 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { Header } from "../components/Navigation/Header";
-
-import "@fontsource-variable/inter";
+import { ChicaneHeader } from "../components/Navigation/Header";
 ---
 
 <BaseLayout>
-  <Header />
-  <div class="inter">
-    Sanjay Goswami Name and Paper <br /> of the Game
-  </div>
-  <style>
-    .inter {
-      flex-shrink: 0;
-      width: auto; /* 1000px */
-      height: auto; /* 173px */
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      word-break: break-word;
-      max-width: 100%;
-      position: relative;
-      font-style: normal;
-      font-family: "Inter", "Inter Placeholder", sans-serif;
-      font-size: 72px;
-      letter-spacing: -3.8px;
-      line-height: 1.2;
-      text-align: center;
-      font-weight: 700;
-    }
-  </style>
+  <ChicaneHeader />
 </BaseLayout>

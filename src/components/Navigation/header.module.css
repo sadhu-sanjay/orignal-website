@@ -1,0 +1,129 @@
+.container {
+  background-color: rgb(0,0,255, 0.1);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  height: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 50;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.chicaneHeader {
+    flex-shrink: 0;
+    width: auto; /* 1000px */
+    height: auto; /* 173px */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+    position: relative;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    color: var(--token-b9c3c957-2c66-49c4-9732-fa196fddac20, #001122);
+    font-size: 72px;
+    letter-spacing: -3.8px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.chicaneHeaderImage {
+    margin-top: 10px;
+    flex-shrink: 0;
+    width: 800px;
+    height: 450px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1.7777777777777777 / 1;
+    background-image: url('/chicane-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.chicaneTextButtonStyle {
+  flex-shrink: 0;
+  width: 380px;
+  height: min-content; /* 128px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 20;
+  border-radius: 0px 0px 0px 0px;
+}
+
+
+.chicanceTextSubline {
+  flex-shrink: 0;
+  width: auto;
+  height: auto; /* 72px */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  overflow: visible;
+  flex: 1 0 0px;
+  position: relative;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: var(--token-1021654d-251a-4750-952b-de3f7005260e, #888888);
+  font-size: 24px;
+  letter-spacing: -0.7px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.chicaneButtonContainer {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: min-content; /* 108px */
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px 15px 15px;
+  box-shadow: 0px 0.7065919983928324px 0.7065919983928324px -0.625px rgba(0, 0, 0, 0.15), 0px 1.8065619053231785px 1.8065619053231785px -1.25px rgba(0, 0, 0, 0.14398), 0px 3.6217592146567767px 3.6217592146567767px -1.875px rgba(0, 0, 0, 0.13793), 0px 6.8655999097303715px 6.8655999097303715px -2.5px rgba(0, 0, 0, 0.12711), 0px 13.646761411524492px 13.646761411524492px -3.125px rgba(0, 0, 0, 0.10451), 0px 30px 30px -3.75px rgba(0, 0, 0, 0.05);
+  background-color: #222222;
+  overflow: visible;
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  border-radius: 8px;
+}
+
+.chicaneButtonText {
+    flex-shrink: 0;
+    width: auto; /* 78px */
+    height: auto; /* 17px */
+    white-space: pre;
+    position: relative;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
