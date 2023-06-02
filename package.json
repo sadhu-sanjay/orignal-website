@@ -13,5 +13,8 @@
     "@astrojs/image": "^0.16.9",
     "astro": "^2.5.6"
   },
-  "author": "Chicane India Pvt. Ltd."
+  "author": "Chicane India Pvt. Ltd.",
+  "devDependencies": {
+    "firebase-tools": "^12.3.0"
+  }
 }
