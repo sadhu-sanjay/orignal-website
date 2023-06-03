@@ -18,6 +18,7 @@
   border-radius: 0px 0px 0px 0px;
 }
 
+
 .chicaneHeader {
   flex-shrink: 0;
   width: auto; /* 1000px */
@@ -65,17 +66,25 @@
     animation: flipup 1s;
     margin-top: 10px;
     flex-shrink: 0;
-    width: 800px;
-    height: 450px;
+    width: 85%;
+    height: 90dvh;
     display: block;
     overflow: hidden;
     position: relative;
     aspect-ratio: 1.7777777777777777 / 1;
-    background-image: url('/src/assets/images/chicane-header.avif');
+    /* background-image: url('/src/assets/images/Andromeda_Galaxy_560mm.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px;
+}
+
+
+.img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.375rem;
+  width: 100%;
 }
 
 .chicaneTextButtonStyle {
