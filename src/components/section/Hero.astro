@@ -1,7 +1,7 @@
 ---
 import style from "./hero.module.css";
 import { Picture } from "@astrojs/image/components";
-const imgUrl = "src/assets/images/chicane-header.png";
+const imgUrl = "src/assets/images/Andromeda_Galaxy_560mm.jpg";
 ---
 
 <div class={style.container}>
@@ -12,7 +12,7 @@ const imgUrl = "src/assets/images/chicane-header.png";
     <source media="(max-width: 810px)" srcset="src/assets/images/hero1.avif" />
     <source media="(max-width: 1200px)" srcset="/src/assets/images/Andromeda_Galaxy_560mm.webp" /> -->
 
-  <img alt="Hero New Image" width="800px" height="700px" src='/test.jpg' >
+  <img alt="Hero New Image" width="800px" height="700px" src={imgUrl}
 
   <div class={style.chicaneTextButtonStyle}>
     <div class={style.chicanceTextSubline}>
