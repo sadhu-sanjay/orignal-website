@@ -18,12 +18,11 @@
   border-radius: 0px 0px 0px 0px;
 }
 
-
 .chicaneHeader {
   flex-shrink: 0;
   width: auto; /* 1000px */
   height: auto; /* 173px */
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   transition: opacity ease-in 2s;
   animation-delay: 0ms;
   word-wrap: break-word;
@@ -60,7 +59,6 @@
     transform: translateY(0) rotateX(0deg)
   }
 }
-
 
 .chicaneHeaderImage {
     animation: flipup 1s;
@@ -104,8 +102,9 @@
   border-radius: 0px 0px 0px 0px;
 }
 
-
 .chicanceTextSubline {
+  animation: bottomAppear 1s;
+  animation-play-state: paused;
   flex-shrink: 0;
   width: auto;
   height: auto; /* 72px */
@@ -127,6 +126,8 @@
 }
 
 .chicaneButtonContainer {
+  animation: bottomAppear 1s;
+  animation-play-state: paused;
   box-sizing: border-box;
   flex-shrink: 0;
   width: min-content; /* 108px */

@@ -1,25 +1,56 @@
 ---
-import style from "./hero.module.css";
-import { Picture } from "@astrojs/image/components";
-const imgUrl = "src/assets/images/Andromeda_Galaxy_560mm.jpg";
+import './hero.css';
 ---
 
-<div class={style.container}>
-  <div class={style.chicaneHeader}><span style="background-color: red;">Welcome</span> to the Chicane Community!  </div>
-    
-    <!-- <picture class={style.chicaneHeaderImage}>
-    <source media="(max-width: 390px)" srcset="src/assets/images/water-park.png" />
-    <source media="(max-width: 810px)" srcset="src/assets/images/hero1.avif" />
-    <source media="(max-width: 1200px)" srcset="/src/assets/images/Andromeda_Galaxy_560mm.webp" /> -->
+<div class='container'>
 
-  <img alt="Hero New Image" width="800px" height="700px" src={imgUrl}
+  <div class='chicaneHeader'>
+    <span style="background-color: red;">Welcome</span> to the Chicane Community!
+  </div>
 
-  <div class={style.chicaneTextButtonStyle}>
-    <div class={style.chicanceTextSubline}>
+  <picture class='chicaneHeaderImage' >
+    <source media="(max-width: 390px)" srcset="./mobile.png" />
+    <source media="(max-width: 810px)" srcset="./tablet.avif" />
+    <source media="(max-width: 1200px)" srcset="./web.webp" />
+    <img alt="Hero New Image" src="./default.jpg" />
+  </picture>
+
+  <div class='chicaneTextButtonStyle' >
+    <script>
+
+      function startAnimationOnScroll() {
+        const elementList = document.querySelectorAll(".chicanceTextSubline, .chicaneButtonContainer");
+        if (!elementList) return
+
+        elementList.forEach(element => {
+
+          if (isElementInViewport(element)) {
+            console.log("Playing Here", element);
+            element.style.animationPlayState = "running";
+          }
+        });
+      }
+
+      function isElementInViewport(el: Element) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      window.addEventListener('scroll', startAnimationOnScroll);
+
+    </script>
+    <div class='chicanceTextSubline' >
       Go from design to site with Framer, the web builder for creative pros.
     </div>
-    <div class={style.chicaneButtonContainer}>
-      <div class={style.chicaneButtonText}>Get Started</div>
+    <div class='chicaneButtonContainer'>
+      <div class='chicaneButtonText' >Get Started</div>
     </div>
   </div>
 </div>
